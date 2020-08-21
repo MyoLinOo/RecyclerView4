@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.myogardener.recyclerview4.R
 import com.myogardener.recyclerview4.model.Card
 import kotlinx.android.synthetic.main.activity_main.view.*
+import kotlinx.android.synthetic.main.item_card.view.*
 
 class CardAdapter(var CardArrayList: ArrayList<Card>) :
     RecyclerView.Adapter<CardAdapter.CardViewHolder>() {
@@ -37,7 +38,7 @@ class CardAdapter(var CardArrayList: ArrayList<Card>) :
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CardViewHolder {
         var view =
-            LayoutInflater.from(parent.context).inflate(R.layout.activity_main, parent, false)
+            LayoutInflater.from(parent.context).inflate(R.layout.item_card, parent, false)
 
         return CardViewHolder(view)
     }
